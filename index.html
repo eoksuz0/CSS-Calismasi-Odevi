@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Apparel | Coming Soon</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <img class="header__logo" src="assets/images/logo.svg" alt="Base Apparel">
+    </header>
+
+    <picture class="hero">
+      <source media="(min-width: 900px)" srcset="assets/images/hero-desktop.jpg">
+      <img class="hero__image" src="assets/images/hero-mobile.jpg" alt="Woman wearing an orange shirt">
+    </picture>
+
+    <section class="intro">
+      <h1 class="intro__title">
+        <span class="intro__title-light">We're</span>
+        Coming soon
+      </h1>
+
+      <p class="intro__text">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form class="form" id="form" novalidate>
+        <div class="form__field">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input class="form__input" id="email" type="email" placeholder="Email Address">
+          <img class="form__icon" src="assets/images/icon-error.svg" alt="">
+          <button class="form__button" type="submit">
+            <img src="assets/images/icon-arrow.svg" alt="Submit">
+          </button>
+        </div>
+        <p class="form__error">Please provide a valid email</p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
